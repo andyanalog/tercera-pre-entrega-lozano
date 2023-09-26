@@ -1,0 +1,16 @@
+{% extends "AppLacasona/padre.html" %}
+{% block titulo %}
+    Registro de usuario.
+{% endblock %}
+
+{% block formulario %}
+
+    <form action="/AppLacasona/" method="POST"> {% csrf_token %}
+
+        <p>Nombre: <input type="text" name="nombre" > </p>
+        <p>Nickname: <input type="text" name="nickname" > </p>
+
+        <input type="submit" value="Guardar">
+
+{% endblock formulario %}
+    </form>
